@@ -117,6 +117,9 @@
 ### oc-id 0.3.3
 * Add Chef Identity Service (oc-id)
 
+### configurable postgresql unix user
+* Update gather-logs and migration scripts to honor postsgresql['username']
+
 ## 11.1.6 (2014-06-05)
 
 ### openssl 1.0.1h
