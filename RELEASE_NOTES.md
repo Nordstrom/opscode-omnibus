@@ -1,16 +1,18 @@
 # Enterprise Chef Release Notes
 
-## 12.0.0 (Unreleased)
-
+## 12.0.0 
 
 ### What's New:
 
 The following items are new since Enterprise Chef 11.2.1 and/or are changes from previous versions:
 
 * [couchdb] has been removed
-* [oc_erchef] All endpoints that formerly were in opscode-account are now in erchef and the data
+* [oc_erchef] 
+  *  All endpoints that formerly were in opscode-account are now in erchef and the data
   resides in SQL. This includes containers, groups, organizations, org associations and invites.  
-  Key generation is now in erchef
+  * Key generation is now in erchef.
+  * 
+
 * [opscode-account] has been removed
 * [opscode-certificate] has been removed
 * [opscode-org-creator] has been removed

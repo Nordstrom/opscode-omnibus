@@ -121,17 +121,13 @@
 ### unicorn removed
 * No longer needed because opscode-account is gone
 
-
 ### TO ADD
 * Missing details for HA replacement
 * Addition of OSC->CS12 migration
 * partybus migrations for containers, groups, global containers, global groups, orgs, etc.
 
 ### TO BE CATEGORIZED
-* 7e3e240171ea8c8204038e0a5df5dc40ce26b07a containers and groups migrations
-* a7eeb67beac5a0e6c5fd36b60bbc4ed50ff9256d custom script for IP/block device failove
-* d2623947f8a862d32d73d4a8b329b25ef645d174 Only subscribe to postgresql on backends 
-* 2931d6644684238a574f0a99b1a75096cde1a13f  [OC-10470/OC-11574] omnibus-ctl 0.1.1
+* 2931d6644684238a574f0a99b1a75096cde1a13f [OC-10470/OC-11574] omnibus-ctl 0.1.1
 
 END OF WORK (TODO)
 
