@@ -1,7 +1,7 @@
 # Enterprise Chef Changelog
 
-## 12.0.0 (Unreleased)
-
+## 12.0.0 
+	
 ### Renamed chef server core instead of Private Chef or Enterprise Chef.
 
 ### bookshelf 1.1.4
@@ -13,11 +13,11 @@
 ### chef-ha-plugin
 * Add support for pluggable high availability system
 
-### chef-sql-schema removed 
-* It is included by enterprise-chef-server-schema.
+### chef-sql-schema removed
+* We use a sqitch based schema instead.
 
 ### couchdb removed
-* We pleased to announce that we have migrated all data over to sql. 
+* We pleased to announce that we have migrated all data over to sql.
 
 ### enterprise-chef-server-schema 2.4.0
 * Updates org_migration_state table with migration_type and verification
@@ -29,25 +29,22 @@
 * Add tables for organizations, org_user_associations, and org_user_invites
 
 ### erlang R16B03 added
-* Added in parallel to R15
+* Replaced R15, which was only used by the services we removed.
 
 ### knife-ec-backup
 * Add support for tools to backup and restore from chef servers.
-
-### logrotate
-* Fixed build configuration that was causing logrotate to not be installed
 
 ### oc-chef-pedant 1.0.57
 * Remove /system-recovery endpoint tests
 * Enhance test coverage for user-org association
 * Update acl, organization and association tests for ruby-erlang differences
 * Add tests for
-  authenticate_user endpoint
-  users email validation
-  superuser access
-  certs in pubkey field for user
-  default organization rewriting
-  verify-password
+  * authenticate_user endpoint
+  * users email validation
+  * superuser access
+  * certs in pubkey field for user
+  * default organization rewriting
+  * verify-password
 
 ### oc_authz_migrator removed
 * oc_authz_migrator is no longer needed
@@ -103,10 +100,10 @@
 * Orgmapper is no longer useful after migrations to SQL are complete.
 
 ### Replace solr 1.4 with solr 4
-* Upgrade to solr 4. 
+* Upgrade to solr 4.
 
 ### Remove opscode-webui.
-* It is superceded by the manage webui package
+* It is superceded by the opcsode-manage package
 
 ### postgresql 9.1 removed
 
@@ -114,22 +111,15 @@
 * Removed. Docs can be found at docs.opscode.com
 
 ### private-chef-cookbooks
-* Use SSL port for lb_internal if non-SSL is disabled
 * Introduce pluggable HA architecture as an alternative to DRBD
 * [OC-10117] opscode-solr4 accepts Java-like memory attributes
-* [CHEF-3045] increase s3_url_ttl from 15m to 8h
-* Lock down postgresql 
 * [OC-11669] keepalived safe mode
 
-
-### rabbitmq 3.3.4
-* Upgrade to RabbitMQ 3.3.4
- 
 ### ruby updated to 1.9.3-p547
 * Update is from 1.9.3-p484
 
 ### unicorn removed
-* No longer needed because opscode-account is goun
+* No longer needed because opscode-account is gone
 
 
 ### TO ADD
@@ -196,6 +186,9 @@ END OF WORK (TODO)
 * [OC-11710] Fix couchdb compaction log rotation
 * Add bifrost_sql_database uri to orgmapper.conf
 * [OC-11585] Allow ['lb']['upstream'] to have a custom setting
+* [CHEF-3045] increase s3_url_ttl from 15m to 8h
+* Use SSL port for lb_internal if non-SSL is disabled
+* Lock down postgresql
 
 ### private-chef-ctl
 
@@ -217,6 +210,9 @@ END OF WORK (TODO)
 * Fix for CVE-2014-3509
 * Fix for CVE-2014-5139
 * Fix for CVE-2014-3508
+
+### rabbitmq 3.3.4
+* Upgrade to RabbitMQ 3.3.4
 
 ### opscode-account rel-1.51.0
 * [OC-11702] - fails to expand ACLs and groups when they contain
