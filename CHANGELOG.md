@@ -17,7 +17,7 @@
 * We use a sqitch based schema instead.
 
 ### couchdb removed
-* We pleased to announce that we have migrated all data over to sql.
+* We are pleased to announce that we have migrated all data over to sql.
 
 ### enterprise-chef-server-schema 2.4.0
 * Updates org_migration_state table with migration_type and verification
@@ -49,7 +49,7 @@
 ### oc_authz_migrator removed
 * oc_authz_migrator is no longer needed
 
-### oc_erchef updated to 0.27.2 (from 0.24.6)
+### oc_erchef updated to 0.27.3
 
 #### oc_erchef 0.27.3
 * Organizations in erchef and in sql
@@ -57,19 +57,19 @@
 
 #### oc_erchef 0.26
 * Initial low level work for organizations and associations in SQL
-* Improve reindexing scruot
-* ACL endpoint in erchef 
-* Add chef action data_payloads 
+* Improve reindexing script
+* ACL endpoint in erchef
+* Add chef action data_payloads
 
 #### oc_erchef 0.25
 * Add default organization support for OSC compatibility
 * Add license endpoint support
 * Add global placeholder org macro.
 * System recovery endpoint work: Fix so recovery_authentication_enabled is correct for new users
-* Add internal chef keygen cache to replace opscode-certificate service. 
+* Add internal chef keygen cache to replace opscode-certificate service.
 * do not force user key type to public on regeneration
-* Bugfix for concurrent cookbook uploads 
-* Automatically upgrade user password salt algorithm on auth 	
+* Bugfix for concurrent cookbook uploads
+* Automatically upgrade user password salt algorithm on auth
 * Cleanups for user password encryption
 * Groups endpoing in sql and in erchef
 * Update authenticate_endpoint for LDAP
